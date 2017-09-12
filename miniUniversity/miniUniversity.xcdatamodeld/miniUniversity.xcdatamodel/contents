@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="OKCourse" representedClassName="OKCourse" parentEntity="OKParent" syncable="YES">
+        <attribute name="courseName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="disciplineName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="student" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OKStudent" inverseName="course" inverseEntity="OKStudent" syncable="YES"/>
+        <relationship name="teacher" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OKTeacher" inverseName="course" inverseEntity="OKTeacher" syncable="YES"/>
+    </entity>
+    <entity name="OKParent" representedClassName="OKParent" isAbstract="YES" syncable="YES"/>
+    <entity name="OKStudent" representedClassName="OKStudent" parentEntity="OKParent" syncable="YES">
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mail" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="course" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OKCourse" inverseName="student" inverseEntity="OKCourse" syncable="YES"/>
+    </entity>
+    <entity name="OKTeacher" representedClassName="OKTeacher" parentEntity="OKParent" syncable="YES">
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="course" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OKCourse" inverseName="teacher" inverseEntity="OKCourse" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="OKStudent" positionX="-1359" positionY="-10038" width="128" height="118"/>
+        <element name="OKTeacher" positionX="-936" positionY="-10008" width="135" height="103"/>
+        <element name="OKCourse" positionX="-1145" positionY="-10008" width="128" height="103"/>
+        <element name="OKParent" positionX="-1118" positionY="-10233" width="128" height="43"/>
+    </elements>
+</model>
