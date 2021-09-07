@@ -1,4 +1,4 @@
-# miniUniversity
+# MiniUniversity
 An interesting application for keeping records of students / teachers / courses.
 
 The application has 3 main screens - "Students", "Courses", "Teachers".
@@ -25,3 +25,5 @@ This screen shows a list of all courses who exist in our database. If you open a
 The screen "Teachers" in accuracy is similar to the screen "Students", only adapted for teachers. 
 
 ![1](https://user-images.githubusercontent.com/27446881/30319978-9d692cd6-97b1-11e7-8ab8-171f8295d2bf.jpeg) ![2](https://user-images.githubusercontent.com/27446881/30319979-9d7175bc-97b1-11e7-9da0-fb0e3b98cf8d.jpeg) ![3](https://user-images.githubusercontent.com/27446881/30319980-9d73a332-97b1-11e7-9e48-9b9da1d64fb5.jpeg) ![4](https://user-images.githubusercontent.com/27446881/30319982-9db3bd8c-97b1-11e7-8216-6fb2125405ef.jpeg)
+
+## Created by Oleksandr Kurtsev (Copyright © 2021) [LICENSE](https://github.com/kurtsev0103/MiniUniversity/blob/master/LICENSE)
